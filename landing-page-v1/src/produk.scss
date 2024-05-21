@@ -1,0 +1,101 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+// Include any default variable overrides here (though functions won't be available)
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Then add additional custom code here
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  background-color: #f3f3f2;
+}
+
+.card-img-top {
+  border-radius: 50px;
+  padding: 20px;
+}
+
+.card {
+  border-radius: 30px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 2px 0px;
+}
+
+.card-body {
+  padding: 25px;
+  margin-top: -15px;
+}
+
+.btn-primary {
+  border-radius: 50px;
+  width: 120px;
+}
+
+.btn-primary:hover {
+  background-color: black;
+  border: none;
+}
+
+h3,
+h5 {
+  color: rgb(0, 91, 228);
+  text-align: center;
+}
+
+p {
+  text-align: center;
+}
+
+.navbar-brand {
+  color: #fff;
+}
+
+.navbar-brand:hover {
+  color: #fff;
+}
+
+.navbar {
+  height: 81px;
+}
+
+.nav-item a {
+  color: #fff;
+}
+
+.nav-item a:hover {
+  color: #fff;
+}
+
+.navbar-nav {
+  background-color: #000;
+}
+
+.navbar-nav ul {
+  background-color: #000;
+}
+
+.produk {
+  margin-top: 100px;
+}
+
+footer {
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  font-size: 20px;
+}
+
+/* Tampilan mobile */
+@media (max-width: 375px) {
+  footer {
+    font-size: 12px;
+  }
+}

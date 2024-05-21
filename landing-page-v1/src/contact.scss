@@ -1,0 +1,145 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+// Include any default variable overrides here (though functions won't be available)
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Then add additional custom code here
+
+body {
+  background: #e8e8e8;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  background-color: #f3f3f2;
+}
+
+.navbar-brand {
+  color: #fff;
+}
+
+.navbar-brand:hover {
+  color: #fff;
+}
+
+.navbar {
+  height: 81px;
+}
+
+.nav-item a {
+  color: #fff;
+}
+
+.nav-item a:hover {
+  color: #fff;
+}
+
+.navbar-nav {
+  background-color: #000;
+}
+
+.navbar-nav ul {
+  background-color: #000;
+}
+
+.form-area {
+  padding-top: 7%;
+}
+
+.row.single-form {
+  box-shadow: 0 2px 20px -5px rgba(0, 0, 0, 0.5);
+}
+
+.left {
+  background: #8e0d07;
+  padding: 50px;
+}
+
+.left h4 {
+  font-family: poppins;
+  color: #fff;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.single-form {
+  background: #fff;
+  margin-top: 35px;
+  margin-bottom: 120px;
+}
+
+.right {
+  padding: 35px 100px;
+  position: relative;
+}
+
+.form-control {
+  border: 2px solid #000;
+}
+
+.right button {
+  border-radius: 0;
+  background: #252525;
+  width: 180px;
+  padding: 15px 0;
+  font-size: 16px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.right button:hover {
+  background-color: #252525;
+}
+
+footer {
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  font-size: 20px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .right i {
+    top: -52px;
+    transform: rotate(90deg);
+    left: 50%;
+  }
+}
+
+@media (max-width: 767px) {
+  .left {
+    padding: 90px 15px;
+    text-align: center;
+    margin-top: 50px;
+  }
+
+  .left h2 {
+    font-size: 25px;
+  }
+
+  .right {
+    padding: 25px;
+  }
+
+  .right i {
+    top: -52px;
+    transform: rotate(90deg);
+    left: 46%;
+  }
+
+  .right button {
+    width: 150px;
+    padding: 12px 0;
+  }
+
+  footer {
+    font-size: 12px;
+  }
+}

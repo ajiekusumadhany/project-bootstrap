@@ -1,0 +1,196 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+// Include any default variable overrides here (though functions won't be available)
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+// Then add additional custom code here
+
+$primary-color: #8e0d07;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  background-color: #f3f3f2;
+}
+
+.navbar-brand {
+  color: #fff;
+}
+
+.navbar-brand:hover {
+  color: #fff;
+}
+
+.navbar {
+  height: 81px;
+}
+
+.nav-item a {
+  color: #fff;
+}
+
+.nav-item a:hover {
+  color: #fff;
+}
+
+.navbar-nav {
+  background-color: #000;
+}
+
+.navbar-nav ul {
+  background-color: #000;
+}
+
+.intro1,
+.intro3 {
+  background-color: $primary-color;
+}
+
+.card-produk {
+  width: 280px;
+  height: 270px;
+}
+
+#product {
+  scroll-margin-top: 80px;
+}
+
+.produk a {
+  background-color: #e1e0e0;
+  width: 285px;
+  height: 50px;
+}
+
+.produk a:hover {
+  background-color: #e1e0e0;
+}
+
+.btn-produk {
+  padding-bottom: 50px;
+}
+a.btn-produk:hover {
+  background-color: $primary-color;
+  color: #fff;
+}
+
+.card-testi {
+  width: 327px;
+  height: 311px;
+}
+
+.testimoni {
+  background-color: $primary-color;
+  scroll-margin-top: 80px;
+}
+
+button span {
+  background-color: #000;
+}
+
+footer {
+  padding: 10px;
+}
+
+.logo-zero {
+  width: 500px;
+  height: auto;
+}
+
+.textContainer {
+  width: 772px;
+}
+
+.textContainer p {
+  font-size: 27px;
+}
+
+.text-size-intro {
+  font-size: 38px;
+}
+
+footer {
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  font-size: 20px;
+}
+
+/* Tampilan mobile */
+@media (max-width: 375px) {
+  .logo-zero {
+    width: 300px;
+    height: auto;
+    margin-top: 100px;
+    margin-bottom: 20px;
+  }
+
+  .textContainer {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .textContainer p {
+    font-size: 16px;
+  }
+
+  .text-size-intro {
+    font-size: 22px;
+  }
+
+  .intro1,
+  .intro2,
+  .intro3 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .daftarProduk,
+  .daftarTestimoni {
+    flex-wrap: wrap;
+  }
+
+  footer {
+    font-size: 12px;
+  }
+}
+
+/* Tampilan tablet */
+@media (min-width: 376px) and (max-width: 810px) {
+  .logo-zero {
+    width: 400px;
+    height: auto;
+    margin-top: 70px;
+    margin-bottom: 40px;
+  }
+
+  .textContainer {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
+  .containerAbout {
+    margin-bottom: 100px;
+  }
+
+  .text-size-intro {
+    font-size: 25px;
+  }
+
+  .intro1,
+  .intro2,
+  .intro3 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .daftarProduk,
+  .daftarTestimoni {
+    flex-wrap: wrap;
+  }
+}
